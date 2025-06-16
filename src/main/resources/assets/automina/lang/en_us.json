@@ -1,0 +1,13 @@
+{
+  "itemGroup.automina": "Example Mod Tab",
+  "block.automina.example_block": "Example Block",
+  "item.automina.example_item": "Example Item",
+
+  "automina.configuration.title": "AutoMina Configs",
+  "automina.configuration.section.automina.common.toml": "AutoMina Configs",
+  "automina.configuration.section.automina.common.toml.title": "AutoMina Configs",
+  "automina.configuration.items": "Item List",
+  "automina.configuration.logDirtBlock": "Log Dirt Block",
+  "automina.configuration.magicNumberIntroduction": "Magic Number Text",
+  "automina.configuration.magicNumber": "Magic Number"
+}
