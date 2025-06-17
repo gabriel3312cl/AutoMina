@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "up":    "automina:block/nm_top_off",
+    "down":  "automina:block/nm_side",
+    "north": "automina:block/nm_side",
+    "south": "automina:block/nm_side",
+    "east":  "automina:block/nm_side",
+    "west":  "automina:block/nm_side"
+  }
+}

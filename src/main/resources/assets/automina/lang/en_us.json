@@ -1,13 +1,7 @@
 {
-  "itemGroup.automina": "Example Mod Tab",
-  "block.automina.example_block": "Example Block",
-  "item.automina.example_item": "Example Item",
-
-  "automina.configuration.title": "AutoMina Configs",
-  "automina.configuration.section.automina.common.toml": "AutoMina Configs",
-  "automina.configuration.section.automina.common.toml.title": "AutoMina Configs",
-  "automina.configuration.items": "Item List",
-  "automina.configuration.logDirtBlock": "Log Dirt Block",
-  "automina.configuration.magicNumberIntroduction": "Magic Number Text",
-  "automina.configuration.magicNumber": "Magic Number"
+  "itemGroup.automina": "AutoMina",
+  "block.automina.set_point": "Set-Point",
+  "item.automina.fuel_pellet": "Fuel Pellet",
+  "message.automina.core_on":  "§aMining Core: ON",
+  "message.automina.core_off": "§cMining Core: OFF"
 }

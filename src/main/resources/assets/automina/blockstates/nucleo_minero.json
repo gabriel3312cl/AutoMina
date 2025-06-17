@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "active=false": { "model": "automina:block/nucleo_minero_off" },
+    "active=true":  { "model": "automina:block/nucleo_minero_on" }
+  }
+}
