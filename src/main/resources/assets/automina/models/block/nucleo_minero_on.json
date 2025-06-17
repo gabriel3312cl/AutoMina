@@ -1,11 +1,8 @@
 {
-  "parent": "block/cube",
+  "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "up":    "automina:block/nm_top_on",
-    "down":  "automina:block/nm_side",
-    "north": "automina:block/nm_side",
-    "south": "automina:block/nm_side",
-    "east":  "automina:block/nm_side",
-    "west":  "automina:block/nm_side"
+    "top": "automina:block/nm_top_on",
+    "bottom": "automina:block/nm_top_off",
+    "side": "automina:block/nm_side"
   }
 }
