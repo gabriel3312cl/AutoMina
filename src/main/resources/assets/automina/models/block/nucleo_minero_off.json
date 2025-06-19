@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "top": "automina:block/nm_top_off",
-    "bottom": "automina:block/nm_top_off",
-    "side": "automina:block/nm_side"
-  }
-}

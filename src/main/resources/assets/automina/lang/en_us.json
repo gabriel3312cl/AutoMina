@@ -1,7 +1,3 @@
 {
-  "itemGroup.automina": "AutoMina",
-  "block.automina.set_point": "Set-Point",
-  "item.automina.fuel_pellet": "Fuel Pellet",
-  "message.automina.core_on":  "§aMining Core: ON",
-  "message.automina.core_off": "§cMining Core: OFF"
+  "itemGroup.automina": "AutoMina"
 }

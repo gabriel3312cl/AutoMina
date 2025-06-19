@@ -1,7 +1,5 @@
 package cl.condorzero.automina;
 
-import cl.condorzero.automina.registry.ModBlocks;
-import cl.condorzero.automina.registry.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -9,9 +7,7 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -24,7 +20,6 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 @Mod(AutoMina.MODID)
@@ -32,26 +27,11 @@ public class AutoMina {
 
     public static final String MODID = "automina";
     private static final Logger LOGGER = LogUtils.getLogger();
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
-    @SuppressWarnings("unused")
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> AUTOMINA_TAB =
-            CREATIVE_MODE_TABS.register("automina", () -> CreativeModeTab.builder()
-                    .title(Component.translatable("itemGroup.automina"))
-                    .withTabsBefore(CreativeModeTabs.BUILDING_BLOCKS)
-                    .icon(() -> ModBlocks.NUCLEO_MINERO.get().asItem().getDefaultInstance())
-                    .displayItems((params, output) -> {
-                        output.accept(ModItems.NUCLEO_MINERO_ITEM.get());
-                    })
-                    .build());
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
     public AutoMina(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
-
-        ModBlocks.register(modEventBus);
-        ModItems.register(modEventBus);
 
         CREATIVE_MODE_TABS.register(modEventBus);
         NeoForge.EVENT_BUS.register(this);
