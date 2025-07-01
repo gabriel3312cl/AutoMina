@@ -1,3 +1,6 @@
 {
-  "itemGroup.automina": "AutoMina"
+  "item.automina.nucleo": "Núcleo",
+  "item.automina.demarcador": "Demarcador",
+  "item.automina.bodega": "Bodega",
+  "itemGroup.automina_tab": "AutoMina"
 }
